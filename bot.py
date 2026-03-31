@@ -4,6 +4,8 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 from agent import ask_agent
 from rag import ingest_pdf, search_pdf
+from dotenv import load_dotenv
+
 
 logging.basicConfig(level=logging.INFO)
 BOT_TOKEN = "8722568536:AAFX70oReJidH2qeLz7y26rMskViV58t2N0" 
